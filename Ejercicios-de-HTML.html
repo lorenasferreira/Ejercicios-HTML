@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5</title>
+    <style>
+        p {
+            text-align: justify;
+        }
+        p:nth-of-type(3),
+        p:nth-of-type(6) {
+            margin-left: 2em;
+        }
+    </style>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 32px auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        ul, ol {
+            margin: 16px 0 32px 40px;
+        }
+
+        ul.disc {
+            list-style-type: disc;
+        }
+
+        ul.circle {
+            list-style-type: circle;
+        }
+
+        ul.square {
+            list-style-type: square;
+        }
+
+        .spacer {
+            height: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Biografía de Tim Berners Lee</h1>
+    <p>
+        <b>Berners-Lee</b> trabajó en el <b>CERN</b> desde junio hasta diciembre de 1980.
+        Durante ese tiempo, propuso un proyecto basado en el <i>hipertexto</i> para facilitar
+        la forma de compartir y la puesta al día de la información entre investigadores. En
+        este periodo también construyó un programa llamado <i>ENQUIRE</i> que no llegó a ver
+        la luz. Después de dejar el CERN, en 1980, se fue a trabajar a la empresa de
+        <i>John Poole Image Computer Systems Ltd.</i>, pero regresó al CERN otra vez en 1984.
+    </p>
+    <h2>El nacimiento de la web</h2>
+    <p>
+        En 1989, el CERN era el nodo de Internet más grande de Europa y Berners-Lee vio la
+        oportunidad de unir Internet y el hipertexto (<b>HTTP</b> y <b>HTML</b>), de lo que surgiría
+        la <b>World Wide Web</b>. Desarrolló su primera propuesta de la Web el 12 de marzo de
+        1989,2 pero no tuvo mucho eco, por lo que en 1990 y con la ayuda de <i>Robert Cailliau</i>,
+        hicieron una revisión que fue aceptada por su gerente, <i>Mike Sendall</i>.
+        <br>
+    </p>
+    <p class="sangria">
+        Usó ideas similares a las que había usado en el sistema Enquire, para crear la
+        World Wide Web, para esto diseñó y construyó el primer navegador (llamado WorldWideWeb
+        y desarrollado con NEXTSTEP) y el primer servidor Web al que llamó httpd (HyperText
+        Transfer Protocol daemon).
+    </p>
+    <h2>La democratización de la web</h2>
+    <p>
+        <b>El primer servidor Web</b> se encontraba en el CERN y fue puesto en línea el 6 de
+        agosto de 1991. Esto proporcionó una explicación sobre lo que era el World
+        Wide Web, cómo uno podría tener un navegador y cómo establecer un servidor
+        Web. Este fue también el primer directorio Web del mundo, ya que Berners-Lee
+        mantuvo una lista de otros sitios Web aparte del suyo. Debido a que tanto el
+        <b>software del servidor como del cliente fue liberado de forma gratuita</b> desde
+        el CERN, el corazón de Internet Europeo en esa época, su difusión fue muy
+        rápida. El número de servidores Web pasó de veintiséis en 1992 a doscientos
+        en octubre de 1995 lo que refleja cual fue la velocidad de la difusión de
+        internet.
+    </p>
+    <h2>El nacimiento del W3C</h2>
+    <p>
+        En 1994 entró en el <i>Laboratorio de Ciencias de la Computación e Inteligencia
+            Artificial del Massachusetts Institute of Technology</i>. Se trasladó a EE. UU.
+        y puso en marcha el <b>W3C</b>, que dirige actualmente.
+    </p>
+    <p>
+        El <b>W3C</b> es un organismo internacional de estandarización de tecnologías Web
+        dirigido conjuntamente por el <i>Instituto Tecnológico de Massachusetts</i>, el
+        <i>ERCIM</i> francés y la <i>Universidad de Keiō</i> en Japón. Este organismo decidió
+        que todos sus estándares fuesen libres, es decir, que los pudiese utilizar
+        todo el mundo libremente sin coste alguno, lo que sin lugar a dudas fue una
+        de las grandes razones para que la Web haya llegado a tener la importancia
+        que tiene hoy en día.
+    </p>
+    <p>
+        En su libro <i>Tejiendo la red</i>, publicado en 1999, Berners-Lee explica por qué
+        <b>la tecnología web es libre y gratis. Se considera al mismo tiempo el inventor
+            y el protector de la web</b>
+    </p>
+</body>
+<main>
+    <section>
+        <h1>Listas Ordenadas</h1>
+        <!-- letras minúsculas empiezando con d -->
+        <ol type="a" start="4" style="margin-left: 40px;">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ol>
+        <!-- números decrecientes -->
+        <ol start="100" reversed style="reversed" margin-left: 40px;>
+            <li>Café</li>
+            <li>Nueces</li>
+            <li>Almendras</li>
+            <li>Arroz</li>
+        </ol>
+        <!-- Números romanos en mayúsculas empezando en 999 (CMXCIX) -->
+        <ol type="I" start="999" style="margin-left: 40px;>
+            <li>Hacer copia de llaves</li>
+            <li>Pasear el perro</li>
+            <li>Cocinar la cena</li>
+        </ol>
+    </section>
+    <section>
+        <h1>Listas No Ordenadas</h1>
+        <ul class="disc">
+            <li>Hacer la comida</li>
+            <li>Pasear el bebé</li>
+            <li>Hacer los deberes de casa</li>
+            <li>Ir a la misa</li>
+        </ul>
+
+        <div class="spacer"></div>
+
+        <ul class="circle">
+            <li>Catalunya</li>
+            <li>Galicia</li>
+            <li>Asturias 3</li>
+            <li>Cantabria</li>
+        </ul>
+
+        <div class="spacer"></div>
+
+        <ul class="square">
+            <li>Madrid</li>
+            <li>Valencia</li>
+            <li>Pais Vasco</li>
+            <li>Zaragoza</li>
+        </ul>
+    </section>
+
+</main>
+<footer>
+    <button>&#128077</button>
+    <button>&#128078</button>
+    <a href="https://www.google.com/">
+        <button>Salir</button>
+    </a>
+</footer>
+</body>
+</html>
